@@ -1,0 +1,8 @@
+[flake8]
+ignore = E501, H301, E226, E231, E701, E703
+
+# E501: long lines
+# H301: one import per line
+# E226: white space around operator
+# E231: white space around operator
+# E703: statement ends with semicolon
