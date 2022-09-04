@@ -5,3 +5,4 @@ RUN pip install glumpy
 RUN git clone https://github.com/VundleVim/Vundle.vim.git /root/.vim/bundle/Vundle.vim
 ADD .vimrc /root/
 RUN vim +VundleInstall +qall
+RUN git config --global --add safe.directory /root/Projects/tess && git config --global user.email "varung@gmail.com" && git config --global user.name "Varun Ganapathi"
