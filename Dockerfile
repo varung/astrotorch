@@ -5,3 +5,4 @@ RUN pip install glumpy
 RUN git clone https://github.com/VundleVim/Vundle.vim.git /root/.vim/bundle/Vundle.vim
 ADD .vimrc /root/
 RUN vim +VundleInstall +qall
+ADD .flake8 /root/
