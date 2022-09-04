@@ -6,3 +6,4 @@ RUN git clone https://github.com/VundleVim/Vundle.vim.git /root/.vim/bundle/Vund
 ADD .vimrc /root/
 RUN vim +VundleInstall +qall
 ADD .flake8 /root/
+RUN git config --global --add safe.directory '*' && git config --global user.email "varung@gmail.com" && git config --global user.name "Varun Ganapathi"
